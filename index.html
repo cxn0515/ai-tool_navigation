@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICode Nav - AI编程工具导航</title>
+    <meta name="keywords" content="AI编程,AI代码助手,Cursor,GitHub Copilot,AI编程工具">
+    <meta name="description" content="发现最好的AI编程工具，让代码更高效">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; text-align: center; }
+        .header h1 { font-size: 42px; margin-bottom: 15px; }
+        .header p { font-size: 18px; opacity: 0.9; }
+        .stats { display: flex; justify-content: center; gap: 60px; margin-top: 30px; }
+        .stat { text-align: center; }
+        .stat-number { font-size: 36px; font-weight: bold; display: block; }
+        .stat-label { font-size: 14px; opacity: 0.8; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .search-box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 40px; }
+        .search-box input { width: 100%; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 25px; font-size: 16px; }
+        .category { margin-bottom: 50px; }
+        .category h2 { font-size: 24px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 3px solid #667eea; display: inline-block; }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .tool-card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; text-decoration: none; color: inherit; display: block; }
+        .tool-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+        .tool-header { display: flex; align-items: center; margin-bottom: 12px; }
+        .tool-icon { width: 40px; height: 40px; border-radius: 8px; margin-right: 12px; }
+        .tool-name { font-size: 18px; font-weight: 600; }
+        .tool-desc { color: #666; font-size: 14px; line-height: 1.5; margin-bottom: 12px; }
+        .tool-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+        .tag { padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+        .tag-free { background: #d4edda; color: #155724; }
+        .tag-paid { background: #fff3cd; color: #856404; }
+        .tag-hot { background: #f8d7da; color: #721c24; }
+        .tag-china { background: #cce5ff; color: #004085; }
+        .footer { background: #2c3e50; color: white; text-align: center; padding: 30px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 AICode Nav</h1>
+        <p>发现最好的AI编程工具，让代码更高效</p>
+        <div class="stats">
+            <div class="stat"><span class="stat-number">20+</span><span class="stat-label">AI工具</span></div>
+            <div class="stat"><span class="stat-number">4</span><span class="stat-label">分类</span></div>
+            <div class="stat"><span class="stat-number">免费</span><span class="stat-label">使用</span></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="🔍 搜索AI编程工具..." id="search">
+        </div>
+        
+        <div class="category">
+            <h2>🔥 热门推荐</h2>
+            <div class="tools-grid">
+                <a href="https://cursor.com" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=cursor.com&size=128" class="tool-icon">
+                        <span class="tool-name">Cursor</span>
+                    </div>
+                    <div class="tool-desc">基于VS Code的AI编辑器，上下文理解极强，Agent模式</div>
+                    <div class="tool-tags">
+                        <span class="tag tag-paid">$20/月</span>
+                        <span class="tag tag-hot">热门</span>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/features/copilot" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=github.com&size=128" class="tool-icon">
+                        <span class="tool-name">GitHub Copilot</span>
+                    </div>
+                    <div class="tool-desc">GitHub官方AI编程助手，支持100+编程语言</div>
+                    <div class="tool-tags">
+                        <span class="tag tag-paid">$10/月</span>
+                        <span class="tag tag-hot">热门</span>
+                    </div>
+                </a>
+                
+                <a href="https://codeium.com/windsurf" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=codeium.com&size=128" class="tool-icon">
+                        <span class="tool-name">Windsurf</span>
+                    </div>
+                    <div class="tool-desc">Cascade流式Agent模式，性价比高，免费版够用</div>
+                    <div class="tool-tags">
+                        <span class="tag tag-paid">$15/月</span>
+                        <span class="tag tag-hot">热门</span>
+                    </div>
+                </a>
+                
+                <a href="https://trae.com.cn" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=trae.com.cn&size=128" class="tool-icon">
+                        <span class="tool-name">Trae 国内版</span>
+                    </div>
+                    <div class="tool-desc">字节出品，中文友好，个人完全免费使用</div>
+                    <div class="tool-tags">
+                        <span class="tag tag-free">免费</span>
+                        <span class="tag tag-china">国产</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2>💻 AI代码编辑器</h2>
+            <div class="tools-grid">
+                <a href="https://cursor.com" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=cursor.com&size=128" class="tool-icon">
+                        <span class="tool-name">Cursor</span>
+                    </div>
+                    <div class="tool-desc">功能最强的AI编辑器</div>
+                    <div class="tool-tags"><span class="tag tag-paid">$20/月</span></div>
+                </a>
+                
+                <a href="https://codeium.com/windsurf" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=codeium.com&size=128" class="tool-icon">
+                        <span class="tool-name">Windsurf</span>
+                    </div>
+                    <div class="tool-desc">Cascade流式Agent</div>
+                    <div class="tool-tags"><span class="tag tag-paid">$15/月</span></div>
+                </a>
+                
+                <a href="https://trae.ai" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=trae.ai&size=128" class="tool-icon">
+                        <span class="tool-name">Trae 国际版</span>
+                    </div>
+                    <div class="tool-desc">支持Gemini-3-Pro</div>
+                    <div class="tool-tags"><span class="tag tag-paid">$10/月</span></div>
+                </a>
+                
+                <a href="https://zed.dev" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=zed.dev&size=128" class="tool-icon">
+                        <span class="tool-name">Zed</span>
+                    </div>
+                    <div class="tool-desc">高性能开源编辑器</div>
+                    <div class="tool-tags"><span class="tag tag-free">免费</span></div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2>🔌 IDE插件</h2>
+            <div class="tools-grid">
+                <a href="https://github.com/features/copilot" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=github.com&size=128" class="tool-icon">
+                        <span class="tool-name">GitHub Copilot</span>
+                    </div>
+                    <div class="tool-desc">生态整合最强</div>
+                    <div class="tool-tags"><span class="tag tag-paid">$10/月</span></div>
+                </a>
+                
+                <a href="https://tabnine.com" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=tabnine.com&size=128" class="tool-icon">
+                        <span class="tool-name">Tabnine</span>
+                    </div>
+                    <div class="tool-desc">企业级AI编程</div>
+                    <div class="tool-tags"><span class="tag tag-paid">$12/月</span></div>
+                </a>
+                
+                <a href="https://codeium.com" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=codeium.com&size=128" class="tool-icon">
+                        <span class="tool-name">Codeium</span>
+                    </div>
+                    <div class="tool-desc">完全免费版可用</div>
+                    <div class="tool-tags"><span class="tag tag-free">免费/$15</span></div>
+                </a>
+                
+                <a href="https://supermaven.com" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=supermaven.com&size=128" class="tool-icon">
+                        <span class="tool-name">Supermaven</span>
+                    </div>
+                    <div class="tool-desc">10万token上下文</div>
+                    <div class="tool-tags"><span class="tag tag-free">免费</span></div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2>🇨🇳 国产AI编程工具</h2>
+            <div class="tools-grid">
+                <a href="https://trae.com.cn" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=trae.com.cn&size=128" class="tool-icon">
+                        <span class="tool-name">Trae 国内版</span>
+                    </div>
+                    <div class="tool-desc">字节出品，个人免费</div>
+                    <div class="tool-tags">
+                        <span class="tag tag-free">免费</span>
+                        <span class="tag tag-hot">热门</span>
+                    </div>
+                </a>
+                
+                <a href="https://tongyi.aliyun.com/lingma" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=tongyi.aliyun.com&size=128" class="tool-icon">
+                        <span class="tool-name">通义灵码</span>
+                    </div>
+                    <div class="tool-desc">阿里云AI编程助手</div>
+                    <div class="tool-tags"><span class="tag tag-free">免费</span></div>
+                </a>
+                
+                <a href="https://codegeex.cn" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=codegeex.cn&size=128" class="tool-icon">
+                        <span class="tool-name">CodeGeeX</span>
+                    </div>
+                    <div class="tool-desc">智谱AI，清华出品</div>
+                    <div class="tool-tags"><span class="tag tag-free">免费</span></div>
+                </a>
+                
+                <a href="https://fittencode.com" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=fittencode.com&size=128" class="tool-icon">
+                        <span class="tool-name">Fitten Code</span>
+                    </div>
+                    <div class="tool-desc">非十科技，极速响应</div>
+                    <div class="tool-tags"><span class="tag tag-free">免费</span></div>
+                </a>
+                
+                <a href="https://comate.baidu.com" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=comate.baidu.com&size=128" class="tool-icon">
+                        <span class="tool-name">文心快码</span>
+                    </div>
+                    <div class="tool-desc">百度AI编程助手</div>
+                    <div class="tool-tags"><span class="tag tag-free">免费</span></div>
+                </a>
+                
+                <a href="https://marscode.cn" class="tool-card" target="_blank">
+                    <div class="tool-header">
+                        <img src="https://www.google.com/s2/favicons?domain=marscode.cn&size=128" class="tool-icon">
+                        <span class="tool-name">MarsCode</span>
+                    </div>
+                    <div class="tool-desc">字节跳动AI编程</div>
+                    <div class="tool-tags"><span class="tag tag-free">免费</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 AICode Nav - AI编程工具导航 | 发现最好的AI代码助手</p>
+    </div>
+    
+    <script>
+        document.getElementById('search').addEventListener('keyup', function(e) {
+            var term = e.target.value.toLowerCase();
+            var cards = document.querySelectorAll('.tool-card');
+            cards.forEach(function(card) {
+                var text = card.textContent.toLowerCase();
+                card.style.display = text.indexOf(term) > -1 ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

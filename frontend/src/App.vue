@@ -113,15 +113,19 @@ const language = ref(browserFallbackLanguage())
 const t = computed(() => messages[language.value])
 
 const loadDirectory = async () => {
-  loading.value = true
+  const showInitialLoading = categories.value.length === 0 && tools.value.length === 0
+  loading.value = showInitialLoading
   failedIcons.value = new Set()
-  const [categoryData, toolData] = await Promise.all([
-    fetchCategories(language.value),
-    fetchTools(language.value)
-  ])
-  categories.value = categoryData
-  tools.value = toolData
-  loading.value = false
+  try {
+    const [categoryData, toolData] = await Promise.all([
+      fetchCategories(language.value, categories.value),
+      fetchTools(language.value, tools.value)
+    ])
+    categories.value = categoryData
+    tools.value = toolData
+  } finally {
+    loading.value = false
+  }
 }
 
 const initializeDirectory = async () => {

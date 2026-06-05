@@ -28,6 +28,7 @@ import {
   Video
 } from 'lucide-vue-next'
 import { fetchBrowserLocale, fetchCategories, fetchLocale, fetchTools } from './api'
+import { localizeCategories, localizeTools } from './i18n'
 
 const iconMap = {
   AudioLines,
@@ -111,15 +112,19 @@ const failedIcons = ref(new Set())
 const language = ref(browserFallbackLanguage())
 
 const t = computed(() => messages[language.value])
+const localizedCategories = computed(() => localizeCategories(categories.value, language.value))
+const localizedTools = computed(() => localizeTools(tools.value, language.value))
 
 const loadDirectory = async () => {
   const showInitialLoading = categories.value.length === 0 && tools.value.length === 0
   loading.value = showInitialLoading
   failedIcons.value = new Set()
   try {
+    const categoryFallback = categories.value.length ? categories.value : undefined
+    const toolFallback = tools.value.length ? tools.value : undefined
     const [categoryData, toolData] = await Promise.all([
-      fetchCategories(language.value, categories.value),
-      fetchTools(language.value, tools.value)
+      fetchCategories('zh', categoryFallback),
+      fetchTools('zh', toolFallback)
     ])
     categories.value = categoryData
     tools.value = toolData
@@ -135,14 +140,13 @@ const initializeDirectory = async () => {
 
 onMounted(initializeDirectory)
 
-const toggleLanguage = async () => {
+const toggleLanguage = () => {
   language.value = language.value === 'zh' ? 'en' : 'zh'
-  await loadDirectory()
 }
 
 const filteredTools = computed(() => {
   const text = query.value.trim().toLowerCase()
-  return tools.value.filter((tool) => {
+  return localizedTools.value.filter((tool) => {
     const categoryMatch = activeCategory.value === 'all' || tool.category.slug === activeCategory.value
     const featuredMatch = !onlyFeatured.value || tool.featured
     const textMatch = !text || [
@@ -157,7 +161,7 @@ const filteredTools = computed(() => {
 })
 
 const groupedTools = computed(() => {
-  return categories.value
+  return localizedCategories.value
     .map((category) => ({
       category,
       tools: filteredTools.value.filter((tool) => tool.category.slug === category.slug)
@@ -166,8 +170,8 @@ const groupedTools = computed(() => {
 })
 
 const categoryCounts = computed(() => {
-  return categories.value.reduce((counts, category) => {
-    counts[category.slug] = tools.value.filter((tool) => tool.category.slug === category.slug).length
+  return localizedCategories.value.reduce((counts, category) => {
+    counts[category.slug] = localizedTools.value.filter((tool) => tool.category.slug === category.slug).length
     return counts
   }, {})
 })
@@ -205,10 +209,10 @@ const hasLocalIcon = (tool) => {
         <button class="category-item" :class="{ active: activeCategory === 'all' }" type="button" @click="setCategory('all')">
           <span class="category-icon"><Star :size="18" /></span>
           <span class="category-name">{{ t.allTools }}</span>
-          <span class="category-count">{{ tools.length }}</span>
+          <span class="category-count">{{ localizedTools.length }}</span>
         </button>
         <button
-          v-for="category in categories"
+          v-for="category in localizedCategories"
           :key="category.slug"
           class="category-item"
           :class="{ active: activeCategory === category.slug }"

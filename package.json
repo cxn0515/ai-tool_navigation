@@ -1,0 +1,14 @@
+{
+  "name": "ainav-cloud",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "dev:api": "node scripts/dev-api.cjs",
+    "icons": "node scripts/generate-local-icons.cjs",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}

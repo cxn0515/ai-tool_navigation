@@ -1,0 +1,1886 @@
+{
+  "chatgpt": {
+    "path": "/icons/1-chatgpt.png",
+    "source": "local"
+  },
+  "claude": {
+    "path": "/icons/2-claude.png",
+    "source": "local"
+  },
+  "gemini": {
+    "path": "/icons/3-gemini.png",
+    "source": "local"
+  },
+  "perplexity": {
+    "path": "/icons/4-perplexity.png",
+    "source": "local"
+  },
+  "poe": {
+    "path": "/icons/5-poe.png",
+    "source": "local"
+  },
+  "mistral-le-chat": {
+    "path": "/icons/6-mistral-le-chat.png",
+    "source": "local"
+  },
+  "grok": {
+    "path": "/icons/7-grok.png",
+    "source": "local"
+  },
+  "midjourney": {
+    "path": "/icons/8-midjourney.png",
+    "source": "local"
+  },
+  "adobe-firefly": {
+    "path": "/icons/9-adobe-firefly.png",
+    "source": "local"
+  },
+  "leonardo": {
+    "path": "/icons/10-leonardo.png",
+    "source": "local"
+  },
+  "ideogram": {
+    "path": "/icons/11-ideogram.png",
+    "source": "local"
+  },
+  "recraft": {
+    "path": "/icons/12-recraft.png",
+    "source": "local"
+  },
+  "canva-ai": {
+    "path": "/icons/13-canva-ai.png",
+    "source": "local"
+  },
+  "stable-diffusion": {
+    "path": "/icons/14-stable-diffusion.webp",
+    "source": "local"
+  },
+  "runway": {
+    "path": "/icons/15-runway.png",
+    "source": "local"
+  },
+  "luma-dream-machine": {
+    "path": "/icons/16-luma-dream-machine.png",
+    "source": "local"
+  },
+  "pika": {
+    "path": "/icons/17-pika.png",
+    "source": "local"
+  },
+  "kling": {
+    "path": "/icons/18-kling.ico",
+    "source": "local"
+  },
+  "heygen": {
+    "path": "/icons/19-heygen.ico",
+    "source": "local"
+  },
+  "synthesia": {
+    "path": "/icons/20-synthesia.png",
+    "source": "local"
+  },
+  "capcut": {
+    "path": "/icons/21-capcut.ico",
+    "source": "local"
+  },
+  "elevenlabs": {
+    "path": "/icons/22-elevenlabs.ico",
+    "source": "local"
+  },
+  "suno": {
+    "path": "/icons/23-suno.png",
+    "source": "local"
+  },
+  "udio": {
+    "path": "/icons/24-udio.ico",
+    "source": "local"
+  },
+  "descript": {
+    "path": "/icons/25-descript.png",
+    "source": "local"
+  },
+  "otter": {
+    "path": "/icons/26-otter.ico",
+    "source": "local"
+  },
+  "whisper": {
+    "path": "/icons/27-whisper.ico",
+    "source": "local"
+  },
+  "murf": {
+    "path": "/icons/28-murf.png",
+    "source": "local"
+  },
+  "cursor": {
+    "path": "/icons/29-cursor.ico",
+    "source": "local"
+  },
+  "github-copilot": {
+    "path": "/icons/30-github-copilot.ico",
+    "source": "local"
+  },
+  "windsurf": {
+    "path": "/icons/31-windsurf.png",
+    "source": "local"
+  },
+  "replit": {
+    "path": "/icons/32-replit.png",
+    "source": "local"
+  },
+  "bolt": {
+    "path": "/icons/33-bolt.png",
+    "source": "local"
+  },
+  "v0": {
+    "path": "/icons/34-v0.png",
+    "source": "local"
+  },
+  "lovable": {
+    "path": "/icons/35-lovable.ico",
+    "source": "local"
+  },
+  "codeium": {
+    "path": "/icons/36-codeium.ico",
+    "source": "local"
+  },
+  "tabnine": {
+    "path": "/icons/37-tabnine.ico",
+    "source": "local"
+  },
+  "zed": {
+    "path": "/icons/38-zed.png",
+    "source": "local"
+  },
+  "notion-ai": {
+    "path": "/icons/39-notion-ai.png",
+    "source": "local"
+  },
+  "gamma": {
+    "path": "/icons/40-gamma.jpg",
+    "source": "local"
+  },
+  "tome": {
+    "path": "/icons/41-tome.png",
+    "source": "local"
+  },
+  "beautiful-ai": {
+    "path": "/icons/42-beautiful-ai.ico",
+    "source": "local"
+  },
+  "granmola": {
+    "path": "/icons/43-granmola.png",
+    "source": "local"
+  },
+  "zapier-ai": {
+    "path": "/icons/44-zapier-ai.ico",
+    "source": "local"
+  },
+  "jasper": {
+    "path": "/icons/45-jasper.png",
+    "source": "local"
+  },
+  "copy-ai": {
+    "path": "/icons/46-copy-ai.png",
+    "source": "local"
+  },
+  "adcreative": {
+    "path": "/icons/48-adcreative.png",
+    "source": "local"
+  },
+  "shopify-magic": {
+    "path": "/icons/49-shopify-magic.ico",
+    "source": "local"
+  },
+  "tongyi": {
+    "path": "/icons/50-tongyi.png",
+    "source": "local"
+  },
+  "doubao": {
+    "path": "/icons/51-doubao.png",
+    "source": "local"
+  },
+  "kimi": {
+    "path": "/icons/52-kimi.ico",
+    "source": "local"
+  },
+  "deepseek": {
+    "path": "/icons/53-deepseek.png",
+    "source": "local"
+  },
+  "yuanbao": {
+    "path": "/icons/54-yuanbao.ico",
+    "source": "local"
+  },
+  "wenxin-yiyan": {
+    "path": "/icons/55-wenxin-yiyan.ico",
+    "source": "local"
+  },
+  "xinghuo": {
+    "path": "/icons/56-xinghuo.ico",
+    "source": "local"
+  },
+  "jimeng": {
+    "path": "/icons/57-jimeng.ico",
+    "source": "local"
+  },
+  "tongyi-lingma": {
+    "path": "/icons/58-tongyi-lingma.png",
+    "source": "local"
+  },
+  "codegeex": {
+    "path": "/icons/59-codegeex.png",
+    "source": "local"
+  },
+  "liblib-libtv": {
+    "path": "/icons/1007-liblib-libtv.png",
+    "source": "local"
+  },
+  "miaoda-秒哒": {
+    "path": "/icons/1008-miaoda.png",
+    "source": "local"
+  },
+  "aippt-aippt": {
+    "path": "/icons/1009-aippt-aippt.png",
+    "source": "local"
+  },
+  "metaso-秘塔ai搜索": {
+    "path": "/icons/1010-metaso--ai.png",
+    "source": "local"
+  },
+  "d-堆友ai": {
+    "path": "/icons/1011-d--ai.png",
+    "source": "local"
+  },
+  "designkit-美图设计室": {
+    "path": "/icons/1012-designkit.jpg",
+    "source": "local"
+  },
+  "ihuiwa-绘蛙ai": {
+    "path": "/icons/1013-ihuiwa--ai.png",
+    "source": "local"
+  },
+  "xingliu-星流ai": {
+    "path": "/icons/1014-xingliu--ai.png",
+    "source": "local"
+  },
+  "haisnap-响指haisnap": {
+    "path": "/icons/1015-haisnap--haisnap.png",
+    "source": "local"
+  },
+  "xiaohuanxiong-办公小浣熊": {
+    "path": "/icons/1016-xiaohuanxiong.png",
+    "source": "local"
+  },
+  "github-vue-skills": {
+    "path": "/icons/1017-github-vue-skills.png",
+    "source": "local"
+  },
+  "open-design-open-design": {
+    "path": "/icons/1018-open-design-open-design.png",
+    "source": "local"
+  },
+  "lickmv-立刻mv": {
+    "path": "/icons/1019-lickmv--mv.png",
+    "source": "local"
+  },
+  "weave-交织-weave": {
+    "path": "/icons/1020-weave---weave.png",
+    "source": "local"
+  },
+  "haimeta-haimeta": {
+    "path": "/icons/1021-haimeta-haimeta.png",
+    "source": "local"
+  },
+  "ai-七色米ai": {
+    "path": "/icons/1022-ai--ai.png",
+    "source": "local"
+  },
+  "wawawriter-蛙蛙写作": {
+    "path": "/icons/1023-wawawriter.png",
+    "source": "local"
+  },
+  "turbodesk-讯飞绘文": {
+    "path": "/icons/1024-turbodesk.png",
+    "source": "local"
+  },
+  "ibiling-笔灵ai写作": {
+    "path": "/icons/1025-ibiling--ai.png",
+    "source": "local"
+  },
+  "ibiling-笔灵ai小说": {
+    "path": "/icons/1026-ibiling--ai.png",
+    "source": "local"
+  },
+  "gaoding-稿定ai文案": {
+    "path": "/icons/1027-gaoding--ai.png",
+    "source": "local"
+  },
+  "app-沁言学术": {
+    "path": "/icons/1028-app.png",
+    "source": "local"
+  },
+  "paperpal-paperpal": {
+    "path": "/icons/1029-paperpal-paperpal.png",
+    "source": "local"
+  },
+  "bmysci-笔目鱼": {
+    "path": "/icons/1030-bmysci.png",
+    "source": "local"
+  },
+  "gaoyiai-稿易ai论文": {
+    "path": "/icons/1031-gaoyiai--ai.png",
+    "source": "local"
+  },
+  "qianbixiezuo-千笔ai论文": {
+    "path": "/icons/1032-qianbixiezuo--ai.png",
+    "source": "local"
+  },
+  "66paper-66ai论文": {
+    "path": "/icons/1033-66paper-66ai.png",
+    "source": "local"
+  },
+  "super-维普科创助手": {
+    "path": "/icons/1034-super.png",
+    "source": "local"
+  },
+  "mymmc-茅茅虫": {
+    "path": "/icons/1035-mymmc.png",
+    "source": "local"
+  },
+  "getdraft-getdraft": {
+    "path": "/icons/1036-getdraft-getdraft.png",
+    "source": "local"
+  },
+  "guangsuxie-光速写作": {
+    "path": "/icons/1037-guangsuxie.png",
+    "source": "local"
+  },
+  "youmind-youmind": {
+    "path": "/icons/1038-youmind-youmind.png",
+    "source": "local"
+  },
+  "xiaoin-万能小in": {
+    "path": "/icons/1039-xiaoin--in.png",
+    "source": "local"
+  },
+  "mowen-墨问": {
+    "path": "/icons/1040-mowen.png",
+    "source": "local"
+  },
+  "miaobi-新华妙笔": {
+    "path": "/icons/1041-miaobi.png",
+    "source": "local"
+  },
+  "danqingmiaobi-丹青妙笔": {
+    "path": "/icons/1042-danqingmiaobi.png",
+    "source": "local"
+  },
+  "feelfish-feelfish": {
+    "path": "/icons/1043-feelfish-feelfish.ico",
+    "source": "local"
+  },
+  "loomi-loomi": {
+    "path": "/icons/1044-loomi-loomi.png",
+    "source": "local"
+  },
+  "ai-bot-readpo": {
+    "path": "/icons/1045-ai-bot-readpo.png",
+    "source": "local"
+  },
+  "xiaoyuxiezuo-小鱼ai写作": {
+    "path": "/icons/1046-xiaoyuxiezuo--ai.png",
+    "source": "local"
+  },
+  "luobi-落笔ai写作": {
+    "path": "/icons/1047-luobi--ai.png",
+    "source": "local"
+  },
+  "chuangfeiai-创飞写作": {
+    "path": "/icons/1048-chuangfeiai.png",
+    "source": "local"
+  },
+  "36ma-超级小说家": {
+    "path": "/icons/1049-36ma.png",
+    "source": "local"
+  },
+  "cailiaoxing-材料星ai": {
+    "path": "/icons/1050-cailiaoxing--ai.png",
+    "source": "local"
+  },
+  "jimeng-即梦": {
+    "path": "/icons/1051-jimeng.png",
+    "source": "local"
+  },
+  "d-堆友ai反应堆": {
+    "path": "/icons/1052-d--ai.png",
+    "source": "local"
+  },
+  "liblib-liblibai-哩布哩布ai": {
+    "path": "/icons/1053-liblib-liblibai--ai.png",
+    "source": "local"
+  },
+  "gaoding-稿定ai": {
+    "path": "/icons/1054-gaoding--ai.png",
+    "source": "local"
+  },
+  "abeiai-阿贝智能": {
+    "path": "/icons/1055-abeiai.jpg",
+    "source": "local"
+  },
+  "civitai-civitai": {
+    "path": "/icons/1056-civitai-civitai.png",
+    "source": "local"
+  },
+  "ai-bot-吐司ai": {
+    "path": "/icons/1057-ai-bot--ai.png",
+    "source": "local"
+  },
+  "runninghub-runninghub": {
+    "path": "/icons/1058-runninghub-runninghub.png",
+    "source": "local"
+  },
+  "tongyi-通义万相": {
+    "path": "/icons/1059-tongyi.png",
+    "source": "local"
+  },
+  "app-可灵ai": {
+    "path": "/icons/1060-app--ai.png",
+    "source": "local"
+  },
+  "miaohua-秒画": {
+    "path": "/icons/1061-miaohua.png",
+    "source": "local"
+  },
+  "whee-whee": {
+    "path": "/icons/1062-whee-whee.png",
+    "source": "local"
+  },
+  "wuli-呜哩": {
+    "path": "/icons/1063-wuli.png",
+    "source": "local"
+  },
+  "insmind-insmind": {
+    "path": "/icons/1064-insmind-insmind.png",
+    "source": "local"
+  },
+  "krene-krene": {
+    "path": "/icons/1065-krene-krene.png",
+    "source": "local"
+  },
+  "img-ai改图神器": {
+    "path": "/icons/1066-img-ai.png",
+    "source": "local"
+  },
+  "miguo-米粿ai": {
+    "path": "/icons/1067-miguo--ai.png",
+    "source": "local"
+  },
+  "katuai-咖图ai": {
+    "path": "/icons/1068-katuai--ai.png",
+    "source": "local"
+  },
+  "d-视觉工厂": {
+    "path": "/icons/1069-d.png",
+    "source": "local"
+  },
+  "miaohui-秒绘ai": {
+    "path": "/icons/1070-miaohui--ai.png",
+    "source": "local"
+  },
+  "imiaohua-妙话ai": {
+    "path": "/icons/1071-imiaohua--ai.png",
+    "source": "local"
+  },
+  "ai-bot-炉米lumi": {
+    "path": "/icons/1072-ai-bot--lumi.png",
+    "source": "local"
+  },
+  "krea-krea-ai": {
+    "path": "/icons/1073-krea-krea-ai.png",
+    "source": "local"
+  },
+  "kira-kira": {
+    "path": "/icons/1074-kira-kira.png",
+    "source": "local"
+  },
+  "jimeng-即梦ai": {
+    "path": "/icons/1075-jimeng--ai.png",
+    "source": "local"
+  },
+  "ihuiwa-绘蛙ai视频": {
+    "path": "/icons/1076-ihuiwa--ai.png",
+    "source": "local"
+  },
+  "d-堆友ai视频": {
+    "path": "/icons/1077-d--ai.png",
+    "source": "local"
+  },
+  "soundviewai-soundview": {
+    "path": "/icons/1078-soundviewai-soundview.jpg",
+    "source": "local"
+  },
+  "chanjing-蝉镜": {
+    "path": "/icons/1079-chanjing.png",
+    "source": "local"
+  },
+  "liblib-liblibai": {
+    "path": "/icons/1080-liblib-liblibai.png",
+    "source": "local"
+  },
+  "youyan3d-有言": {
+    "path": "/icons/1081-youyan3d.png",
+    "source": "local"
+  },
+  "aibrm-白日梦": {
+    "path": "/icons/1082-aibrm.png",
+    "source": "local"
+  },
+  "ai-seedance": {
+    "path": "/icons/1083-ai-seedance.jpg",
+    "source": "local"
+  },
+  "xingyun3d-魔珐星云": {
+    "path": "/icons/1084-xingyun3d.png",
+    "source": "local"
+  },
+  "fas-pollo-ai": {
+    "path": "/icons/1085-fas-pollo-ai.png",
+    "source": "local"
+  },
+  "joypix-joypix": {
+    "path": "/icons/1086-joypix-joypix.png",
+    "source": "local"
+  },
+  "video-腾讯混元ai视频": {
+    "path": "/icons/1087-video--ai.png",
+    "source": "local"
+  },
+  "ai-bot-通义万相ai视频": {
+    "path": "/icons/1088-ai-bot--ai.png",
+    "source": "local"
+  },
+  "lingya-灵芽社区": {
+    "path": "/icons/1089-lingya.png",
+    "source": "local"
+  },
+  "lumenflow-lumen-flow": {
+    "path": "/icons/1090-lumenflow-lumen-flow.png",
+    "source": "local"
+  },
+  "vidu-vidu": {
+    "path": "/icons/1091-vidu-vidu.jpg",
+    "source": "local"
+  },
+  "rhtv-rhtv": {
+    "path": "/icons/1092-rhtv-rhtv.png",
+    "source": "local"
+  },
+  "tapnow-tapnow": {
+    "path": "/icons/1093-tapnow-tapnow.png",
+    "source": "local"
+  },
+  "higgsfield-higgsfield": {
+    "path": "/icons/1094-higgsfield-higgsfield.png",
+    "source": "local"
+  },
+  "flova-flova": {
+    "path": "/icons/1095-flova-flova.png",
+    "source": "local"
+  },
+  "fogsight-雾象": {
+    "path": "/icons/1096-fogsight.png",
+    "source": "local"
+  },
+  "juhuo-剧火ai": {
+    "path": "/icons/1097-juhuo--ai.png",
+    "source": "local"
+  },
+  "zhiwen-讯飞智文": {
+    "path": "/icons/1098-zhiwen.png",
+    "source": "local"
+  },
+  "cappt-咔片ppt": {
+    "path": "/icons/1099-cappt--ppt.png",
+    "source": "local"
+  },
+  "docmee-文多多aippt": {
+    "path": "/icons/1100-docmee--aippt.png",
+    "source": "local"
+  },
+  "pptgo-博思aippt": {
+    "path": "/icons/1101-pptgo--aippt.png",
+    "source": "local"
+  },
+  "islide-islide-aippt": {
+    "path": "/icons/1102-islide-islide-aippt.png",
+    "source": "local"
+  },
+  "pi-pi智能ppt": {
+    "path": "/icons/1103-pi-pi-ppt.png",
+    "source": "local"
+  },
+  "gaoding-稿定ppt": {
+    "path": "/icons/1104-gaoding--ppt.png",
+    "source": "local"
+  },
+  "bigppt-笔格aippt": {
+    "path": "/icons/1105-bigppt--aippt.png",
+    "source": "local"
+  },
+  "ibiling-笔灵aippt": {
+    "path": "/icons/1106-ibiling--aippt.png",
+    "source": "local"
+  },
+  "wenku-百度文库ai助手": {
+    "path": "/icons/1107-wenku--ai.png",
+    "source": "local"
+  },
+  "aippt-aippt插件": {
+    "path": "/icons/1108-aippt-aippt.png",
+    "source": "local"
+  },
+  "napkin-napkin": {
+    "path": "/icons/1109-napkin-napkin.png",
+    "source": "local"
+  },
+  "swishy-swishy": {
+    "path": "/icons/1110-swishy-swishy.png",
+    "source": "local"
+  },
+  "chartgen-chartgen": {
+    "path": "/icons/1111-chartgen-chartgen.png",
+    "source": "local"
+  },
+  "tenorshare-diagrimo": {
+    "path": "/icons/1112-tenorshare-diagrimo.png",
+    "source": "local"
+  },
+  "picdoc-picdoc": {
+    "path": "/icons/1113-picdoc-picdoc.png",
+    "source": "local"
+  },
+  "kimi-kimi-ppt助手": {
+    "path": "/icons/1114-kimi-kimi-ppt.png",
+    "source": "local"
+  },
+  "ppt-夸克ppt": {
+    "path": "/icons/1115-ppt--ppt.png",
+    "source": "local"
+  },
+  "designkit-美图ai-ppt": {
+    "path": "/icons/1116-designkit--ai-ppt.jpg",
+    "source": "local"
+  },
+  "feixianglaoshi-飞象老师": {
+    "path": "/icons/1117-feixianglaoshi.png",
+    "source": "local"
+  },
+  "2dogppt-二狗ppt": {
+    "path": "/icons/1118-2dogppt--ppt.png",
+    "source": "local"
+  },
+  "1dppt-一点ppt": {
+    "path": "/icons/1119-1dppt--ppt.png",
+    "source": "local"
+  },
+  "narraland-narraland": {
+    "path": "/icons/1120-narraland-narraland.png",
+    "source": "local"
+  },
+  "classppt-课灵-ppt": {
+    "path": "/icons/1121-classppt---ppt.png",
+    "source": "local"
+  },
+  "ai-bot-清言ppt": {
+    "path": "/icons/1122-ai-bot--ppt.jpg",
+    "source": "local"
+  },
+  "zhiyan-万兴智演": {
+    "path": "/icons/1123-zhiyan.png",
+    "source": "local"
+  },
+  "mindshow-麦当秀mindshow": {
+    "path": "/icons/1124-mindshow--mindshow.png",
+    "source": "local"
+  },
+  "voxdeck-voxdeck": {
+    "path": "/icons/1125-voxdeck-voxdeck.png",
+    "source": "local"
+  },
+  "dis-千问": {
+    "path": "/icons/1126-dis.png",
+    "source": "local"
+  },
+  "doudou-逗逗ai": {
+    "path": "/icons/1127-doudou--ai.png",
+    "source": "local"
+  },
+  "kimi-kimi智能助手": {
+    "path": "/icons/1128-kimi-kimi.png",
+    "source": "local"
+  },
+  "z-z-ai": {
+    "path": "/icons/1129-z-z-ai.png",
+    "source": "local"
+  },
+  "ai-bot-qwen-chat": {
+    "path": "/icons/1130-ai-bot-qwen-chat.png",
+    "source": "local"
+  },
+  "chat-minimax": {
+    "path": "/icons/1131-chat-minimax.png",
+    "source": "local"
+  },
+  "longcat-longcat": {
+    "path": "/icons/1132-longcat-longcat.png",
+    "source": "local"
+  },
+  "chatglm-智谱清言": {
+    "path": "/icons/1133-chatglm.png",
+    "source": "local"
+  },
+  "ai-bot-华为小艺": {
+    "path": "/icons/1134-ai-bot.png",
+    "source": "local"
+  },
+  "lorka-lorka-ai": {
+    "path": "/icons/1135-lorka-lorka-ai.png",
+    "source": "local"
+  },
+  "wenxiaobai-问小白": {
+    "path": "/icons/1136-wenxiaobai.png",
+    "source": "local"
+  },
+  "ling-百灵大模型": {
+    "path": "/icons/1137-ling.png",
+    "source": "local"
+  },
+  "stepfun-阶跃ai": {
+    "path": "/icons/1138-stepfun--ai.png",
+    "source": "local"
+  },
+  "ying-百小应": {
+    "path": "/icons/1139-ying.png",
+    "source": "local"
+  },
+  "tiangong-天工ai": {
+    "path": "/icons/1140-tiangong--ai.png",
+    "source": "local"
+  },
+  "chat-商量sensechat": {
+    "path": "/icons/1141-chat--sensechat.png",
+    "source": "local"
+  },
+  "me-me-bot": {
+    "path": "/icons/1142-me-me-bot.webp",
+    "source": "local"
+  },
+  "sayloai-saylo": {
+    "path": "/icons/1143-sayloai-saylo.png",
+    "source": "local"
+  },
+  "atoms-atoms": {
+    "path": "/icons/1144-atoms-atoms.png",
+    "source": "local"
+  },
+  "aipyaipy-爱派aipy": {
+    "path": "/icons/1145-aipyaipy--aipy.png",
+    "source": "local"
+  },
+  "volcengine-arkclaw": {
+    "path": "/icons/1146-volcengine-arkclaw.png",
+    "source": "local"
+  },
+  "dumate-dumate": {
+    "path": "/icons/1147-dumate-dumate.png",
+    "source": "local"
+  },
+  "web-tabbit": {
+    "path": "/icons/1148-web-tabbit.png",
+    "source": "local"
+  },
+  "agent-astronclaw": {
+    "path": "/icons/1149-agent-astronclaw.png",
+    "source": "local"
+  },
+  "seko-seko": {
+    "path": "/icons/1150-seko-seko.png",
+    "source": "local"
+  },
+  "d-堆友agent": {
+    "path": "/icons/1151-d--agent.png",
+    "source": "local"
+  },
+  "qoder-qoderwork": {
+    "path": "/icons/1152-qoder-qoderwork.png",
+    "source": "local"
+  },
+  "flowith-flowith": {
+    "path": "/icons/1153-flowith-flowith.png",
+    "source": "local"
+  },
+  "agent-讯飞星辰agent": {
+    "path": "/icons/1154-agent--agent.jpg",
+    "source": "local"
+  },
+  "01agent-01agent": {
+    "path": "/icons/1155-01agent-01agent.png",
+    "source": "local"
+  },
+  "clawd-openclaw": {
+    "path": "/icons/1156-clawd-openclaw.png",
+    "source": "local"
+  },
+  "coze-扣子": {
+    "path": "/icons/1157-coze.png",
+    "source": "local"
+  },
+  "codebuddy-workbuddy": {
+    "path": "/icons/1158-codebuddy-workbuddy.png",
+    "source": "local"
+  },
+  "manus-manus": {
+    "path": "/icons/1159-manus-manus.png",
+    "source": "local"
+  },
+  "autoglm-autoclaw": {
+    "path": "/icons/1160-autoglm-autoclaw.png",
+    "source": "local"
+  },
+  "agent-mavis": {
+    "path": "/icons/1161-agent-mavis.png",
+    "source": "local"
+  },
+  "marvis-腾讯marvis": {
+    "path": "/icons/1162-marvis--marvis.png",
+    "source": "local"
+  },
+  "hermes-ai-hermes-agent": {
+    "path": "/icons/1163-hermes-ai-hermes-agent.png",
+    "source": "local"
+  },
+  "dingtalk-悟空": {
+    "path": "/icons/1164-dingtalk.png",
+    "source": "local"
+  },
+  "moxt-moxt": {
+    "path": "/icons/1165-moxt-moxt.png",
+    "source": "local"
+  },
+  "happycapy-happycapy": {
+    "path": "/icons/1166-happycapy-happycapy.png",
+    "source": "local"
+  },
+  "genspark-genspark": {
+    "path": "/icons/1167-genspark-genspark.png",
+    "source": "local"
+  },
+  "oiioii-oiioii": {
+    "path": "/icons/1168-oiioii-oiioii.png",
+    "source": "local"
+  },
+  "lovart-lovart": {
+    "path": "/icons/1169-lovart-lovart.png",
+    "source": "local"
+  },
+  "hub-minimax-hub": {
+    "path": "/icons/1170-hub-minimax-hub.png",
+    "source": "local"
+  },
+  "claw-qclaw": {
+    "path": "/icons/1171-claw-qclaw.png",
+    "source": "local"
+  },
+  "trae-trae": {
+    "path": "/icons/1172-trae-trae.png",
+    "source": "local"
+  },
+  "xiaohuanxiong-代码小浣熊": {
+    "path": "/icons/1173-xiaohuanxiong.png",
+    "source": "local"
+  },
+  "openai-codex": {
+    "path": "/icons/1174-openai-codex.png",
+    "source": "local"
+  },
+  "anthropic-claude-code": {
+    "path": "/icons/1175-anthropic-claude-code.png",
+    "source": "local"
+  },
+  "qoder-qoder": {
+    "path": "/icons/1176-qoder-qoder.png",
+    "source": "local"
+  },
+  "opencode-opencode": {
+    "path": "/icons/1177-opencode-opencode.png",
+    "source": "local"
+  },
+  "kilo-kilo-code": {
+    "path": "/icons/1178-kilo-kilo-code.png",
+    "source": "local"
+  },
+  "antigravity-google-antigravity": {
+    "path": "/icons/1179-antigravity-google-antigravity.png",
+    "source": "local"
+  },
+  "kiro-kiro": {
+    "path": "/icons/1180-kiro-kiro.png",
+    "source": "local"
+  },
+  "youware-youware": {
+    "path": "/icons/1181-youware-youware.png",
+    "source": "local"
+  },
+  "zcode-ai-zcode": {
+    "path": "/icons/1182-zcode-ai-zcode.png",
+    "source": "local"
+  },
+  "codebuddy-codebuddy-ide": {
+    "path": "/icons/1183-codebuddy-codebuddy-ide.png",
+    "source": "local"
+  },
+  "catpaw-catpaw": {
+    "path": "/icons/1184-catpaw-catpaw.png",
+    "source": "local"
+  },
+  "augmentcode-augment-code": {
+    "path": "/icons/1185-augmentcode-augment-code.png",
+    "source": "local"
+  },
+  "monkeycode-ai-monkeycode": {
+    "path": "/icons/1186-monkeycode-ai-monkeycode.png",
+    "source": "local"
+  },
+  "cli-iflow-cli": {
+    "path": "/icons/1187-cli-iflow-cli.png",
+    "source": "local"
+  },
+  "ai-bot-firebase-studio": {
+    "path": "/icons/1188-ai-bot-firebase-studio.png",
+    "source": "local"
+  },
+  "tokfinity-infcode": {
+    "path": "/icons/1189-tokfinity-infcode.png",
+    "source": "local"
+  },
+  "codeflicker-codeflicker": {
+    "path": "/icons/1190-codeflicker-codeflicker.png",
+    "source": "local"
+  },
+  "ai-bot-clacky-ai": {
+    "path": "/icons/1191-ai-bot-clacky-ai.png",
+    "source": "local"
+  },
+  "ai-bot-replit-agent": {
+    "path": "/icons/1192-ai-bot-replit-agent.png",
+    "source": "local"
+  },
+  "warp-warp-code": {
+    "path": "/icons/1193-warp-warp-code.png",
+    "source": "local"
+  },
+  "codeflying-码上飞": {
+    "path": "/icons/1194-codeflying.png",
+    "source": "local"
+  },
+  "bigmodel-bigmodel": {
+    "path": "/icons/1195-bigmodel-bigmodel.png",
+    "source": "local"
+  },
+  "bailian-阿里云百炼": {
+    "path": "/icons/1196-bailian.png",
+    "source": "local"
+  },
+  "coze-coze": {
+    "path": "/icons/1197-coze-coze.png",
+    "source": "local"
+  },
+  "volcengine-方舟-agent-plan": {
+    "path": "/icons/1198-volcengine---agent-plan.png",
+    "source": "local"
+  },
+  "zenmux-zenmux": {
+    "path": "/icons/1199-zenmux-zenmux.png",
+    "source": "local"
+  },
+  "aistudio-google-ai-studio": {
+    "path": "/icons/1200-aistudio-google-ai-studio.png",
+    "source": "local"
+  },
+  "cloud-fastgpt": {
+    "path": "/icons/1201-cloud-fastgpt.png",
+    "source": "local"
+  },
+  "ai-bot-zion": {
+    "path": "/icons/1202-ai-bot-zion.png",
+    "source": "local"
+  },
+  "n8n-n8n": {
+    "path": "/icons/1203-n8n-n8n.png",
+    "source": "local"
+  },
+  "ai-bot-dify": {
+    "path": "/icons/1204-ai-bot-dify.png",
+    "source": "local"
+  },
+  "qianwenai-千问云": {
+    "path": "/icons/1205-qianwenai.png",
+    "source": "local"
+  },
+  "meoo-秒悟meoo": {
+    "path": "/icons/1206-meoo--meoo.png",
+    "source": "local"
+  },
+  "wanxiaozhi-万小智": {
+    "path": "/icons/1207-wanxiaozhi.png",
+    "source": "local"
+  },
+  "myaifast-麦芽ai": {
+    "path": "/icons/1208-myaifast--ai.png",
+    "source": "local"
+  },
+  "trickle-trickle-ai": {
+    "path": "/icons/1209-trickle-trickle-ai.png",
+    "source": "local"
+  },
+  "openrouter-openrouter": {
+    "path": "/icons/1210-openrouter-openrouter.png",
+    "source": "local"
+  },
+  "cloud-siliconflow": {
+    "path": "/icons/1211-cloud-siliconflow.png",
+    "source": "local"
+  },
+  "ofox-ofoxai": {
+    "path": "/icons/1212-ofox-ofoxai.png",
+    "source": "local"
+  },
+  "worldclaw-worldclaw": {
+    "path": "/icons/1213-worldclaw-worldclaw.png",
+    "source": "local"
+  },
+  "tokendance-tokendance": {
+    "path": "/icons/1214-tokendance-tokendance.png",
+    "source": "local"
+  },
+  "ecloud-moma": {
+    "path": "/icons/1215-ecloud-moma.png",
+    "source": "local"
+  },
+  "open-博查万象": {
+    "path": "/icons/1216-open.png",
+    "source": "local"
+  },
+  "b-b-ai": {
+    "path": "/icons/1217-b-b-ai.png",
+    "source": "local"
+  },
+  "lingguang-灵光": {
+    "path": "/icons/1218-lingguang.png",
+    "source": "local"
+  },
+  "ai-bot-base44": {
+    "path": "/icons/1219-ai-bot-base44.png",
+    "source": "local"
+  },
+  "ebcloud-英博云ai算力": {
+    "path": "/icons/1220-ebcloud--ai.png",
+    "source": "local"
+  },
+  "agentsyun-汇智token工场": {
+    "path": "/icons/1221-agentsyun--token.png",
+    "source": "local"
+  },
+  "modao-墨刀ai": {
+    "path": "/icons/1222-modao--ai.png",
+    "source": "local"
+  },
+  "135editor-135-ai排版": {
+    "path": "/icons/1223-135editor-135-ai.png",
+    "source": "local"
+  },
+  "holopix-holopix-ai": {
+    "path": "/icons/1224-holopix-holopix-ai.png",
+    "source": "local"
+  },
+  "figma-figma-ai": {
+    "path": "/icons/1225-figma-figma-ai.png",
+    "source": "local"
+  },
+  "seede-seede-ai": {
+    "path": "/icons/1226-seede-seede-ai.png",
+    "source": "local"
+  },
+  "try-wegic": {
+    "path": "/icons/1227-try-wegic.png",
+    "source": "local"
+  },
+  "paico-pixso-ai": {
+    "path": "/icons/1228-paico-pixso-ai.png",
+    "source": "local"
+  },
+  "recraft-recraft-ai": {
+    "path": "/icons/1229-recraft-recraft-ai.png",
+    "source": "local"
+  },
+  "stitch-stitch": {
+    "path": "/icons/1230-stitch-stitch.png",
+    "source": "local"
+  },
+  "miora-miora": {
+    "path": "/icons/1231-miora-miora.png",
+    "source": "local"
+  },
+  "d-ardot": {
+    "path": "/icons/1232-d-ardot.png",
+    "source": "local"
+  },
+  "aiart-创客贴ai": {
+    "path": "/icons/1233-aiart--ai.png",
+    "source": "local"
+  },
+  "ai-bot-onlook": {
+    "path": "/icons/1234-ai-bot-onlook.png",
+    "source": "local"
+  },
+  "ribbi-ribbi": {
+    "path": "/icons/1235-ribbi-ribbi.png",
+    "source": "local"
+  },
+  "interiorize-interiorize": {
+    "path": "/icons/1236-interiorize-interiorize.png",
+    "source": "local"
+  },
+  "quiver-quiverai": {
+    "path": "/icons/1237-quiver-quiverai.png",
+    "source": "local"
+  },
+  "design-gemdesign": {
+    "path": "/icons/1238-design-gemdesign.png",
+    "source": "local"
+  },
+  "piccopilot-pic-copilot": {
+    "path": "/icons/1239-piccopilot-pic-copilot.png",
+    "source": "local"
+  },
+  "canva-魔力工作室": {
+    "path": "/icons/1240-canva.png",
+    "source": "local"
+  },
+  "idesign-蚂上有创意": {
+    "path": "/icons/1241-idesign.png",
+    "source": "local"
+  },
+  "isheji-爱设计": {
+    "path": "/icons/1242-isheji.png",
+    "source": "local"
+  },
+  "pagepop-pagepop": {
+    "path": "/icons/1243-pagepop-pagepop.png",
+    "source": "local"
+  },
+  "xmyeditor-小墨鹰编辑器": {
+    "path": "/icons/1244-xmyeditor.png",
+    "source": "local"
+  },
+  "moyin-魔音工坊": {
+    "path": "/icons/1245-moyin.png",
+    "source": "local"
+  },
+  "peiyin-讯飞智作": {
+    "path": "/icons/1246-peiyin.png",
+    "source": "local"
+  },
+  "douge-逗哥配音": {
+    "path": "/icons/1247-douge.png",
+    "source": "local"
+  },
+  "yizhi-讯飞译制": {
+    "path": "/icons/1248-yizhi.png",
+    "source": "local"
+  },
+  "yinshu-音述ai": {
+    "path": "/icons/1249-yinshu--ai.png",
+    "source": "local"
+  },
+  "lang123-琅琅配音": {
+    "path": "/icons/1250-lang123.png",
+    "source": "local"
+  },
+  "ai-bot-千音漫语": {
+    "path": "/icons/1251-ai-bot.png",
+    "source": "local"
+  },
+  "ai-bot-minimax-audio": {
+    "path": "/icons/1252-ai-bot-minimax-audio.png",
+    "source": "local"
+  },
+  "ai-bot-noiz-ai": {
+    "path": "/icons/1253-ai-bot-noiz-ai.png",
+    "source": "local"
+  },
+  "tunee-tunee": {
+    "path": "/icons/1254-tunee-tunee.png",
+    "source": "local"
+  },
+  "iflyrec-讯飞听见": {
+    "path": "/icons/1255-iflyrec.png",
+    "source": "local"
+  },
+  "notebooklm-notebooklm": {
+    "path": "/icons/1256-notebooklm-notebooklm.png",
+    "source": "local"
+  },
+  "flowmusic-flow-music": {
+    "path": "/icons/1257-flowmusic-flow-music.png",
+    "source": "local"
+  },
+  "y-vemus未音": {
+    "path": "/icons/1258-y-vemus.png",
+    "source": "local"
+  },
+  "haimian-海绵音乐": {
+    "path": "/icons/1259-haimian.png",
+    "source": "local"
+  },
+  "nafy-nafy-ai": {
+    "path": "/icons/1260-nafy-nafy-ai.png",
+    "source": "local"
+  },
+  "qx-轻析-litesight": {
+    "path": "/icons/1261-qx---litesight.png",
+    "source": "local"
+  },
+  "turboscribe-turboscribe": {
+    "path": "/icons/1262-turboscribe-turboscribe.png",
+    "source": "local"
+  },
+  "dwsj-多维视界": {
+    "path": "/icons/1263-dwsj.png",
+    "source": "local"
+  },
+  "ai-bot-天谱乐": {
+    "path": "/icons/1264-ai-bot.png",
+    "source": "local"
+  },
+  "yinfeng-音疯": {
+    "path": "/icons/1265-yinfeng.png",
+    "source": "local"
+  },
+  "ai-bot-mureka": {
+    "path": "/icons/1266-ai-bot-mureka.png",
+    "source": "local"
+  },
+  "yinchaoyongxian-音潮": {
+    "path": "/icons/1267-yinchaoyongxian.png",
+    "source": "local"
+  },
+  "audioeditor-音剪": {
+    "path": "/icons/1268-audioeditor.png",
+    "source": "local"
+  },
+  "audiomyst-音秘": {
+    "path": "/icons/1269-audiomyst.png",
+    "source": "local"
+  },
+  "memo-memoai": {
+    "path": "/icons/1270-memo-memoai.png",
+    "source": "local"
+  },
+  "reecho-reecho睿声": {
+    "path": "/icons/1271-reecho-reecho.png",
+    "source": "local"
+  },
+  "b-夸克ai": {
+    "path": "/icons/1272-b--ai.png",
+    "source": "local"
+  },
+  "bohrium-玻尔": {
+    "path": "/icons/1273-bohrium.png",
+    "source": "local"
+  },
+  "aminer-aminer": {
+    "path": "/icons/1274-aminer-aminer.png",
+    "source": "local"
+  },
+  "iflow-心流": {
+    "path": "/icons/1275-iflow.png",
+    "source": "local"
+  },
+  "ai-bot-点点": {
+    "path": "/icons/1276-ai-bot.png",
+    "source": "local"
+  },
+  "devv-devv": {
+    "path": "/icons/1277-devv-devv.png",
+    "source": "local"
+  },
+  "zhida-知乎直答": {
+    "path": "/icons/1278-zhida.png",
+    "source": "local"
+  },
+  "n-纳米ai": {
+    "path": "/icons/1279-n--ai.png",
+    "source": "local"
+  },
+  "think-百度ai探索版": {
+    "path": "/icons/1280-think--ai.png",
+    "source": "local"
+  },
+  "felo-felo": {
+    "path": "/icons/1281-felo-felo.png",
+    "source": "local"
+  },
+  "tiangong-天工ai搜索": {
+    "path": "/icons/1282-tiangong--ai.png",
+    "source": "local"
+  },
+  "exa-exa-ai": {
+    "path": "/icons/1283-exa-exa-ai.png",
+    "source": "local"
+  },
+  "bochaai-博查ai搜索": {
+    "path": "/icons/1284-bochaai--ai.png",
+    "source": "local"
+  },
+  "wispaper-wispaper": {
+    "path": "/icons/1285-wispaper-wispaper.png",
+    "source": "local"
+  },
+  "cusp-cuspai": {
+    "path": "/icons/1286-cusp-cuspai.png",
+    "source": "local"
+  },
+  "sheepgeo-sheepgeo": {
+    "path": "/icons/1287-sheepgeo-sheepgeo.png",
+    "source": "local"
+  },
+  "pagentia-博简智慧专利": {
+    "path": "/icons/1288-pagentia.png",
+    "source": "local"
+  },
+  "lianqiai-链企ai": {
+    "path": "/icons/1289-lianqiai--ai.png",
+    "source": "local"
+  },
+  "so-360ai搜索": {
+    "path": "/icons/1290-so-360ai.png",
+    "source": "local"
+  },
+  "ask-问问小宇宙": {
+    "path": "/icons/1291-ask.png",
+    "source": "local"
+  },
+  "dexa-dexa-ai": {
+    "path": "/icons/1292-dexa-dexa-ai.png",
+    "source": "local"
+  },
+  "xanswer-xanswer": {
+    "path": "/icons/1293-xanswer-xanswer.png",
+    "source": "local"
+  },
+  "glean-glean": {
+    "path": "/icons/1294-glean-glean.png",
+    "source": "local"
+  },
+  "alpha-sense-alphasense": {
+    "path": "/icons/1295-alpha-sense-alphasense.png",
+    "source": "local"
+  },
+  "explorer-globe-explorer": {
+    "path": "/icons/1296-explorer-globe-explorer.png",
+    "source": "local"
+  },
+  "reportify-reportify": {
+    "path": "/icons/1297-reportify-reportify.png",
+    "source": "local"
+  },
+  "phind-phind": {
+    "path": "/icons/1298-phind-phind.png",
+    "source": "local"
+  },
+  "aidaxue-ai大学堂": {
+    "path": "/icons/1299-aidaxue-ai.png",
+    "source": "local"
+  },
+  "d-堆友ai学习": {
+    "path": "/icons/1300-d--ai.png",
+    "source": "local"
+  },
+  "aisharenet-ai分享圈": {
+    "path": "/icons/1301-aisharenet-ai.png",
+    "source": "local"
+  },
+  "ai-bot-openai-academy": {
+    "path": "/icons/1302-ai-bot-openai-academy.png",
+    "source": "local"
+  },
+  "dayofai-day-of-ai": {
+    "path": "/icons/1303-dayofai-day-of-ai.png",
+    "source": "local"
+  },
+  "fast-fast-ai": {
+    "path": "/icons/1304-fast-fast-ai.png",
+    "source": "local"
+  },
+  "xue8nav-学吧导航": {
+    "path": "/icons/1305-xue8nav.png",
+    "source": "local"
+  },
+  "lynote-lynote": {
+    "path": "/icons/1306-lynote-lynote.png",
+    "source": "local"
+  },
+  "coursera-coursera": {
+    "path": "/icons/1307-coursera-coursera.png",
+    "source": "local"
+  },
+  "elementsofai-elements-of-ai": {
+    "path": "/icons/1308-elementsofai-elements-of-ai.png",
+    "source": "local"
+  },
+  "deeplearning-deeplearning-ai": {
+    "path": "/icons/1309-deeplearning-deeplearning-ai.png",
+    "source": "local"
+  },
+  "zh-动手学深度学习": {
+    "path": "/icons/1310-zh.png",
+    "source": "local"
+  },
+  "machinelearningmastery-machinelearningmastery": {
+    "path": "/icons/1311-machinelearningmastery-machinelearningmastery.png",
+    "source": "local"
+  },
+  "microsoft-generative-ai-for-beginners": {
+    "path": "/icons/1312-microsoft-generative-ai-for-beginners.png",
+    "source": "local"
+  },
+  "microsoft-ml-for-beginners": {
+    "path": "/icons/1313-microsoft-ml-for-beginners.png",
+    "source": "local"
+  },
+  "kaggle-kaggle": {
+    "path": "/icons/1314-kaggle-kaggle.png",
+    "source": "local"
+  },
+  "brilliant-神经网络入门": {
+    "path": "/icons/1315-brilliant.png",
+    "source": "local"
+  },
+  "trancy-trancy": {
+    "path": "/icons/1316-trancy-trancy.png",
+    "source": "local"
+  },
+  "coach-reading-coach": {
+    "path": "/icons/1317-coach-reading-coach.png",
+    "source": "local"
+  },
+  "aistudio-飞桨ai-studio": {
+    "path": "/icons/1318-aistudio--ai-studio.png",
+    "source": "local"
+  },
+  "coding-腾讯扣叮": {
+    "path": "/icons/1319-coding.png",
+    "source": "local"
+  },
+  "developer-阿里云ai学习路线": {
+    "path": "/icons/1320-developer--ai.png",
+    "source": "local"
+  },
+  "udacity-udacity-ai学院": {
+    "path": "/icons/1321-udacity-udacity-ai.png",
+    "source": "local"
+  },
+  "ai-google-ai": {
+    "path": "/icons/1322-ai-google-ai.png",
+    "source": "local"
+  },
+  "showmeai-showmeai知识社区": {
+    "path": "/icons/1323-showmeai-showmeai.png",
+    "source": "local"
+  },
+  "txyz-txyz": {
+    "path": "/icons/1324-txyz-txyz.png",
+    "source": "local"
+  },
+  "maas-讯飞星辰maas": {
+    "path": "/icons/1325-maas--maas.png",
+    "source": "local"
+  },
+  "deepmind-nano-banana": {
+    "path": "/icons/1326-deepmind-nano-banana.png",
+    "source": "local"
+  },
+  "cherry-ai-cherry-studio": {
+    "path": "/icons/1327-cherry-ai-cherry-studio.png",
+    "source": "local"
+  },
+  "ollama-ollama": {
+    "path": "/icons/1328-ollama-ollama.png",
+    "source": "local"
+  },
+  "ai-bot-anythingllm": {
+    "path": "/icons/1329-ai-bot-anythingllm.png",
+    "source": "local"
+  },
+  "ai-bot-chatbox-ai": {
+    "path": "/icons/1330-ai-bot-chatbox-ai.png",
+    "source": "local"
+  },
+  "modelscope-魔搭社区": {
+    "path": "/icons/1331-modelscope.png",
+    "source": "local"
+  },
+  "ai-豆包大模型": {
+    "path": "/icons/1332-ai.png",
+    "source": "local"
+  },
+  "dataify-dataify": {
+    "path": "/icons/1333-dataify-dataify.png",
+    "source": "local"
+  },
+  "aivinla-无阶未来": {
+    "path": "/icons/1334-aivinla.png",
+    "source": "local"
+  },
+  "agpt-autogpt": {
+    "path": "/icons/1335-agpt-autogpt.png",
+    "source": "local"
+  },
+  "jan-jan": {
+    "path": "/icons/1336-jan-jan.png",
+    "source": "local"
+  },
+  "agentgpt-agentgpt": {
+    "path": "/icons/1337-agentgpt-agentgpt.png",
+    "source": "local"
+  },
+  "openbmb-openbmb": {
+    "path": "/icons/1338-openbmb-openbmb.png",
+    "source": "local"
+  },
+  "llama-llama-3": {
+    "path": "/icons/1339-llama-llama-3.png",
+    "source": "local"
+  },
+  "ai-gemma": {
+    "path": "/icons/1340-ai-gemma.png",
+    "source": "local"
+  },
+  "ai-bot-gpt-4o": {
+    "path": "/icons/1341-ai-bot-gpt-4o.png",
+    "source": "local"
+  },
+  "hunyuan-腾讯混元大模型": {
+    "path": "/icons/1342-hunyuan.png",
+    "source": "local"
+  },
+  "intern-ai-书生大模型": {
+    "path": "/icons/1343-intern-ai.png",
+    "source": "local"
+  },
+  "wenxin-文心大模型": {
+    "path": "/icons/1344-wenxin.png",
+    "source": "local"
+  },
+  "github-llama": {
+    "path": "/icons/1345-github-llama.png",
+    "source": "local"
+  },
+  "baai-悟道": {
+    "path": "/icons/1346-baai.png",
+    "source": "local"
+  },
+  "miraclevision-miraclevision奇想智能": {
+    "path": "/icons/1347-miraclevision-miraclevision.png",
+    "source": "local"
+  },
+  "gradio-gradio": {
+    "path": "/icons/1348-gradio-gradio.png",
+    "source": "local"
+  },
+  "deepfloyd-deepfloyd-if": {
+    "path": "/icons/1349-deepfloyd-deepfloyd-if.png",
+    "source": "local"
+  },
+  "cohere-cohere": {
+    "path": "/icons/1350-cohere-cohere.png",
+    "source": "local"
+  },
+  "openapi-序列猴子": {
+    "path": "/icons/1351-openapi.png",
+    "source": "local"
+  },
+  "aigcarena-magicarena": {
+    "path": "/icons/1352-aigcarena-magicarena.png",
+    "source": "local"
+  },
+  "paperswithcode-mmlu": {
+    "path": "/icons/1353-paperswithcode-mmlu.png",
+    "source": "local"
+  },
+  "huggingface-open-llm-leaderboard": {
+    "path": "/icons/1354-huggingface-open-llm-leaderboard.png",
+    "source": "local"
+  },
+  "cevalbenchmark-c-eval": {
+    "path": "/icons/1355-cevalbenchmark-c-eval.png",
+    "source": "local"
+  },
+  "flageval-flageval": {
+    "path": "/icons/1356-flageval-flageval.png",
+    "source": "local"
+  },
+  "cluebenchmarks-superclue": {
+    "path": "/icons/1357-cluebenchmarks-superclue.png",
+    "source": "local"
+  },
+  "agi-eval-agi-eval": {
+    "path": "/icons/1358-agi-eval-agi-eval.png",
+    "source": "local"
+  },
+  "opencompass-opencompass": {
+    "path": "/icons/1359-opencompass-opencompass.png",
+    "source": "local"
+  },
+  "github-cmmlu": {
+    "path": "/icons/1360-github-cmmlu.png",
+    "source": "local"
+  },
+  "mmbench-mmbench": {
+    "path": "/icons/1361-mmbench-mmbench.png",
+    "source": "local"
+  },
+  "crfm-helm": {
+    "path": "/icons/1362-crfm-helm.png",
+    "source": "local"
+  },
+  "lmarena-lmarena": {
+    "path": "/icons/1363-lmarena-lmarena.png",
+    "source": "local"
+  },
+  "llmeval-llmeval3": {
+    "path": "/icons/1364-llmeval-llmeval3.png",
+    "source": "local"
+  },
+  "evalgpt-h2o-evalgpt": {
+    "path": "/icons/1365-evalgpt-h2o-evalgpt.png",
+    "source": "local"
+  },
+  "pubmedqa-pubmedqa": {
+    "path": "/icons/1366-pubmedqa-pubmedqa.png",
+    "source": "local"
+  },
+  "matrix-朱雀ai检测": {
+    "path": "/icons/1367-matrix--ai.png",
+    "source": "local"
+  },
+  "gptzero-gptzero": {
+    "path": "/icons/1368-gptzero-gptzero.png",
+    "source": "local"
+  },
+  "studycorgi-studycorgi-chatgpt-detector": {
+    "path": "/icons/1369-studycorgi-studycorgi-chatgpt-detector.png",
+    "source": "local"
+  },
+  "aiseo-aiseo-ai-content-detector": {
+    "path": "/icons/1370-aiseo-aiseo-ai-content-detector.png",
+    "source": "local"
+  },
+  "proofig-proofig": {
+    "path": "/icons/1371-proofig-proofig.png",
+    "source": "local"
+  },
+  "writecream-writecream-ai-content-detector": {
+    "path": "/icons/1372-writecream-writecream-ai-content-detector.png",
+    "source": "local"
+  },
+  "smodin-smodin-ai-content-detector": {
+    "path": "/icons/1373-smodin-smodin-ai-content-detector.png",
+    "source": "local"
+  },
+  "sapling-sapling-ai-content-detector": {
+    "path": "/icons/1374-sapling-sapling-ai-content-detector.png",
+    "source": "local"
+  },
+  "rx-睿信论文检测": {
+    "path": "/icons/1375-rx.png",
+    "source": "local"
+  },
+  "wacuowang-挖错网": {
+    "path": "/icons/1376-wacuowang.png",
+    "source": "local"
+  },
+  "xueshu-团象": {
+    "path": "/icons/1377-xueshu.png",
+    "source": "local"
+  },
+  "writer-ai-content-detector": {
+    "path": "/icons/1378-writer-ai-content-detector.png",
+    "source": "local"
+  },
+  "originality-originality-ai": {
+    "path": "/icons/1379-originality-originality-ai.png",
+    "source": "local"
+  },
+  "copyleaks-copyleaks": {
+    "path": "/icons/1380-copyleaks-copyleaks.png",
+    "source": "local"
+  },
+  "gowinston-winston-ai": {
+    "path": "/icons/1381-gowinston-winston-ai.png",
+    "source": "local"
+  },
+  "promptpilot-promptpilot": {
+    "path": "/icons/1382-promptpilot-promptpilot.png",
+    "source": "local"
+  },
+  "prompts-幂简ai提示词商城": {
+    "path": "/icons/1383-prompts--ai.png",
+    "source": "local"
+  },
+  "promptingguide-提示工程指南": {
+    "path": "/icons/1384-promptingguide.png",
+    "source": "local"
+  },
+  "cloud-google-ai提示词库": {
+    "path": "/icons/1385-cloud-google-ai.png",
+    "source": "local"
+  },
+  "promptperfect-promptperfect": {
+    "path": "/icons/1386-promptperfect-promptperfect.png",
+    "source": "local"
+  },
+  "openart-stable-diffusion-prompt-book": {
+    "path": "/icons/1387-openart-stable-diffusion-prompt-book.png",
+    "source": "local"
+  },
+  "localbanana-localbanana": {
+    "path": "/icons/1388-localbanana-localbanana.png",
+    "source": "local"
+  },
+  "prompthero-prompthero": {
+    "path": "/icons/1389-prompthero-prompthero.png",
+    "source": "local"
+  },
+  "prompt-clickprompt": {
+    "path": "/icons/1390-prompt-clickprompt.png",
+    "source": "local"
+  },
+  "aipromptgenerator-ai-prompt-generator": {
+    "path": "/icons/1391-aipromptgenerator-ai-prompt-generator.png",
+    "source": "local"
+  },
+  "aishort-ai-short": {
+    "path": "/icons/1392-aishort-ai-short.png",
+    "source": "local"
+  },
+  "github-langgpt": {
+    "path": "/icons/1393-github-langgpt.png",
+    "source": "local"
+  },
+  "generrated-generrated": {
+    "path": "/icons/1394-generrated-generrated.png",
+    "source": "local"
+  },
+  "publicprompts-publicprompts": {
+    "path": "/icons/1395-publicprompts-publicprompts.png",
+    "source": "local"
+  },
+  "snackprompt-snack-prompt": {
+    "path": "/icons/1396-snackprompt-snack-prompt.png",
+    "source": "local"
+  },
+  "aiprm-aiprm": {
+    "path": "/icons/1397-aiprm-aiprm.png",
+    "source": "local"
+  },
+  "prompt-promptfolder": {
+    "path": "/icons/1398-prompt-promptfolder.png",
+    "source": "local"
+  },
+  "aipromptgenius-ai-prompt-genius": {
+    "path": "/icons/1399-aipromptgenius-ai-prompt-genius.png",
+    "source": "local"
+  },
+  "ai-bot-promptbase": {
+    "path": "/icons/1400-ai-bot-promptbase.png",
+    "source": "local"
+  },
+  "moxby-ai-prompt-library": {
+    "path": "/icons/1401-moxby-ai-prompt-library.png",
+    "source": "local"
+  },
+  "prompts-awesome-chatgpt-prompts": {
+    "path": "/icons/1402-prompts-awesome-chatgpt-prompts.png",
+    "source": "local"
+  },
+  "learningprompt-learning-prompt": {
+    "path": "/icons/1403-learningprompt-learning-prompt.png",
+    "source": "local"
+  },
+  "cakegrowth-cakegrowth": {
+    "path": "/icons/1404-cakegrowth-cakegrowth.png",
+    "source": "local"
+  },
+  "linktr-linktree": {
+    "path": "/icons/1405-linktr-linktree.png",
+    "source": "local"
+  },
+  "bitly-bitly": {
+    "path": "/icons/1406-bitly-bitly.png",
+    "source": "local"
+  },
+  "partnerstack-partnerstack": {
+    "path": "/icons/1407-partnerstack-partnerstack.png",
+    "source": "local"
+  },
+  "impact-impact-com": {
+    "path": "/icons/1408-impact-impact-com.png",
+    "source": "local"
+  },
+  "mp-微信公众平台": {
+    "path": "/icons/1409-mp.png",
+    "source": "local"
+  },
+  "mp-头条号": {
+    "path": "/icons/1410-mp.png",
+    "source": "local"
+  },
+  "newrank-新榜": {
+    "path": "/icons/1411-newrank.png",
+    "source": "local"
+  },
+  "juejin-稀土掘金": {
+    "path": "/icons/1412-juejin.png",
+    "source": "local"
+  },
+  "zhihu-知乎": {
+    "path": "/icons/1413-zhihu.png",
+    "source": "local"
+  },
+  "csdn-csdn": {
+    "path": "/icons/1414-csdn-csdn.png",
+    "source": "local"
+  },
+  "baijiahao-百家号": {
+    "path": "/icons/1415-baijiahao.png",
+    "source": "local"
+  },
+  "creator-小红书创作服务平台": {
+    "path": "/icons/1416-creator.png",
+    "source": "local"
+  },
+  "xiaobot-小报童": {
+    "path": "/icons/1417-xiaobot.png",
+    "source": "local"
+  },
+  "zsxq-知识星球": {
+    "path": "/icons/1418-zsxq.png",
+    "source": "local"
+  },
+  "sem-小鹅通": {
+    "path": "/icons/1419-sem.png",
+    "source": "local"
+  }
+}

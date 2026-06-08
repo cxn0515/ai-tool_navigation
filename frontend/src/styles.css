@@ -39,6 +39,8 @@ button {
 .sidebar {
   position: sticky;
   top: 0;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   padding: 22px 14px;
   border-right: 1px solid #dde4ee;
@@ -61,6 +63,7 @@ button {
   border-radius: 8px;
   background: #2563eb;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .brand-block h1 {
@@ -79,6 +82,27 @@ button {
 .category-menu {
   display: grid;
   gap: 6px;
+}
+
+.sidebar-footer {
+  display: grid;
+  gap: 6px;
+  margin-top: auto;
+  padding: 18px 8px 0;
+  border-top: 1px solid #edf1f7;
+}
+
+.sidebar-footer a,
+.site-footer a {
+  color: #526070;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sidebar-footer a:hover,
+.site-footer a:hover {
+  color: #1d4ed8;
 }
 
 .category-item {
@@ -257,6 +281,65 @@ button {
   gap: 28px;
 }
 
+.legal-page {
+  max-width: 820px;
+  min-height: 520px;
+  padding: 34px 32px;
+  border: 1px solid #e2e7f0;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(18, 28, 45, 0.035);
+}
+
+.legal-eyebrow {
+  margin: 0 0 10px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.legal-page h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.legal-updated {
+  margin: 12px 0 0;
+  color: #748096;
+  font-size: 14px;
+}
+
+.legal-copy {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+  color: #465267;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.legal-copy p {
+  margin: 0;
+}
+
+.legal-copy a {
+  color: #1d4ed8;
+  font-weight: 800;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 34px;
+  padding-top: 18px;
+  border-top: 1px solid #dde4ee;
+}
+
 .tool-section {
   scroll-margin-top: 84px;
 }
@@ -426,6 +509,7 @@ button {
     position: sticky;
     z-index: 8;
     height: auto;
+    max-height: 52vh;
     padding: 12px;
     border-right: 0;
     border-bottom: 1px solid #dde4ee;
@@ -442,6 +526,14 @@ button {
     padding-bottom: 2px;
   }
 
+  .sidebar-footer {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 10px 2px 0;
+  }
+
   .category-item {
     width: auto;
     min-width: 150px;
@@ -453,6 +545,10 @@ button {
 
   .topbar {
     grid-template-columns: 1fr;
+  }
+
+  .legal-page {
+    padding: 24px 18px;
   }
 }
 

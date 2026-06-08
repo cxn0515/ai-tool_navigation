@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import {
   AudioLines,
   Blocks,
@@ -84,6 +84,91 @@ const messages = {
   }
 }
 
+const sitePages = {
+  zh: {
+    nav: {
+      home: '首页',
+      about: '关于',
+      contact: '联系',
+      privacy: '隐私政策'
+    },
+    about: {
+      title: '关于',
+      eyebrow: 'About',
+      body: [
+        '我是一个用 AI 编程做工具站的独立开发者，在这里记录和分享出海建站的经验。',
+        '这个网站整理 AI 工具、建站资源和独立开发过程中真实用得到的服务，主要给正在做产品、内容站、工具站和海外项目的人参考。',
+        '我会尽量保持内容真实、简洁、可验证。如果某个工具或信息发生变化，也会持续更新。'
+      ]
+    },
+    contact: {
+      title: '联系',
+      eyebrow: 'Contact',
+      body: [
+        '如果你想反馈工具信息、提交合作建议，或者指出页面里的错误，可以通过邮箱联系我。',
+        '我会尽量查看并回复与本站内容相关的邮件。'
+      ],
+      emailLabel: '邮箱'
+    },
+    privacy: {
+      title: '隐私政策',
+      eyebrow: 'Privacy Policy',
+      updated: '最后更新：2026 年 6 月 8 日',
+      body: [
+        '本隐私政策说明本站如何收集、使用和保护访问者的信息。使用本站即表示你同意本政策中说明的做法。',
+        '本站可能会收集浏览器类型、设备信息、访问页面、来源页面、访问时间等基础日志信息，用于了解网站运行情况、改进内容和排查问题。',
+        '本站计划接入 Google AdSense 广告。Google 以及其广告合作伙伴可能会在你的浏览器中使用 Cookie 或类似技术，用于投放广告、衡量广告效果，以及根据你访问本站和其他网站的情况展示个性化或非个性化广告。',
+        '你可以在浏览器设置中禁用 Cookie，也可以通过 Google 的广告设置管理个性化广告偏好。禁用 Cookie 可能会影响部分网站功能或广告展示。',
+        '本站不会出售你的个人信息，也不会主动要求你提交敏感个人资料。你通过邮件联系本站时，邮箱地址和邮件内容仅用于回复你的问题或处理相关请求。',
+        '本站可能包含指向第三方网站的链接。第三方网站有自己的隐私政策，本站不对其内容或数据处理方式负责。',
+        '如果本隐私政策发生重要变化，我会在本页面更新说明和日期。'
+      ],
+      contact: '如有隐私相关问题，请联系：'
+    }
+  },
+  en: {
+    nav: {
+      home: 'Home',
+      about: 'About',
+      contact: 'Contact',
+      privacy: 'Privacy Policy'
+    },
+    about: {
+      title: 'About',
+      eyebrow: 'About',
+      body: [
+        'I am an independent developer building tool sites with AI-assisted programming, and I use this site to document and share practical experience about building websites for global audiences.',
+        'This directory collects AI tools, website-building resources, and services that are useful for makers working on products, content sites, utility sites, and international projects.',
+        'I try to keep the content honest, concise, and verifiable, and I update it when tools or details change.'
+      ]
+    },
+    contact: {
+      title: 'Contact',
+      eyebrow: 'Contact',
+      body: [
+        'For tool corrections, partnership ideas, or website feedback, you can reach me by email.',
+        'I try to review and respond to messages related to this site.'
+      ],
+      emailLabel: 'Email'
+    },
+    privacy: {
+      title: 'Privacy Policy',
+      eyebrow: 'Privacy Policy',
+      updated: 'Last updated: June 8, 2026',
+      body: [
+        'This Privacy Policy explains how this website collects, uses, and protects visitor information. By using this website, you agree to the practices described here.',
+        'This website may collect basic log information such as browser type, device information, pages visited, referring pages, and access times to understand site performance, improve content, and troubleshoot issues.',
+        'This website plans to use Google AdSense advertising. Google and its advertising partners may use cookies or similar technologies in your browser to serve ads, measure ad performance, and show personalized or non-personalized ads based on your visits to this and other websites.',
+        'You can disable cookies in your browser settings and manage personalized advertising preferences through Google Ads settings. Disabling cookies may affect some website functionality or ad delivery.',
+        'This website does not sell your personal information and does not ask you to submit sensitive personal data. If you contact the site by email, your email address and message content are used only to respond to your request.',
+        'This website may include links to third-party websites. Those websites have their own privacy policies, and this site is not responsible for their content or data practices.',
+        'If this Privacy Policy changes in a meaningful way, the updated details and date will be posted on this page.'
+      ],
+      contact: 'For privacy questions, contact:'
+    }
+  }
+}
+
 function browserFallbackLanguage() {
   const locale = navigator.language || ''
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || ''
@@ -110,8 +195,17 @@ const onlyFeatured = ref(false)
 const loading = ref(true)
 const failedIcons = ref(new Set())
 const language = ref(browserFallbackLanguage())
+const currentPath = ref(window.location.pathname)
 
 const t = computed(() => messages[language.value])
+const pages = computed(() => sitePages[language.value])
+const currentPage = computed(() => {
+  const path = currentPath.value.replace(/\/$/, '') || '/'
+  if (path === '/about') return pages.value.about
+  if (path === '/contact') return pages.value.contact
+  if (path === '/privacy-policy') return pages.value.privacy
+  return null
+})
 const localizedCategories = computed(() => localizeCategories(categories.value, language.value))
 const localizedTools = computed(() => localizeTools(tools.value, language.value))
 
@@ -138,10 +232,29 @@ const initializeDirectory = async () => {
   await loadDirectory()
 }
 
-onMounted(initializeDirectory)
+const syncPath = () => {
+  currentPath.value = window.location.pathname
+}
+
+onMounted(() => {
+  initializeDirectory()
+  window.addEventListener('popstate', syncPath)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('popstate', syncPath)
+})
 
 const toggleLanguage = () => {
   language.value = language.value === 'zh' ? 'en' : 'zh'
+}
+
+const navigateTo = (path) => {
+  if (window.location.pathname !== path) {
+    window.history.pushState({}, '', path)
+  }
+  currentPath.value = path
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 const filteredTools = computed(() => {
@@ -178,6 +291,9 @@ const categoryCounts = computed(() => {
 
 const setCategory = (slug) => {
   activeCategory.value = slug
+  if (currentPath.value !== '/') {
+    navigateTo('/')
+  }
 }
 
 const iconLabel = (tool) => {
@@ -197,9 +313,9 @@ const hasLocalIcon = (tool) => {
   <main class="app-shell">
     <aside class="sidebar" :aria-label="t.appTitle">
       <div class="brand-block">
-        <div class="brand-mark">
+        <a class="brand-mark" href="/" :aria-label="pages.nav.home" @click.prevent="navigateTo('/')">
           <Sparkles :size="22" />
-        </div>
+        </a>
         <div>
           <h1>{{ t.appTitle }}</h1>
         </div>
@@ -226,6 +342,12 @@ const hasLocalIcon = (tool) => {
           <span class="category-count">{{ categoryCounts[category.slug] || 0 }}</span>
         </button>
       </nav>
+
+      <nav class="sidebar-footer" aria-label="Site links">
+        <a href="/about" @click.prevent="navigateTo('/about')">{{ pages.nav.about }}</a>
+        <a href="/contact" @click.prevent="navigateTo('/contact')">{{ pages.nav.contact }}</a>
+        <a href="/privacy-policy" @click.prevent="navigateTo('/privacy-policy')">{{ pages.nav.privacy }}</a>
+      </nav>
     </aside>
 
     <section class="content-pane">
@@ -248,6 +370,23 @@ const hasLocalIcon = (tool) => {
       <section v-if="loading" class="loading-state">
         <LoaderCircle :size="24" />
         <span>{{ t.loading }}</span>
+      </section>
+
+      <section v-else-if="currentPage" class="legal-page">
+        <p class="legal-eyebrow">{{ currentPage.eyebrow }}</p>
+        <h2>{{ currentPage.title }}</h2>
+        <p v-if="currentPage.updated" class="legal-updated">{{ currentPage.updated }}</p>
+        <div class="legal-copy">
+          <p v-for="paragraph in currentPage.body" :key="paragraph">{{ paragraph }}</p>
+          <p v-if="currentPage.emailLabel">
+            <strong>{{ currentPage.emailLabel }}：</strong>
+            <a href="mailto:cxn0515@gmail.com">cxn0515@gmail.com</a>
+          </p>
+          <p v-if="currentPage.contact">
+            {{ currentPage.contact }}
+            <a href="mailto:cxn0515@gmail.com">cxn0515@gmail.com</a>
+          </p>
+        </div>
       </section>
 
       <section v-else-if="filteredTools.length === 0" class="empty-state">
@@ -289,6 +428,13 @@ const hasLocalIcon = (tool) => {
           </div>
         </div>
       </section>
+
+      <footer class="site-footer">
+        <a href="/" @click.prevent="navigateTo('/')">{{ pages.nav.home }}</a>
+        <a href="/about" @click.prevent="navigateTo('/about')">{{ pages.nav.about }}</a>
+        <a href="/contact" @click.prevent="navigateTo('/contact')">{{ pages.nav.contact }}</a>
+        <a href="/privacy-policy" @click.prevent="navigateTo('/privacy-policy')">{{ pages.nav.privacy }}</a>
+      </footer>
     </section>
   </main>
 </template>

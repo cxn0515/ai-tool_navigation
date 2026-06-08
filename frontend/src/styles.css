@@ -246,7 +246,6 @@ button {
   background: #f7faff;
 }
 
-.loading-state,
 .empty-state {
   display: grid;
   min-height: 320px;
@@ -259,12 +258,123 @@ button {
 }
 
 .loading-state {
-  grid-auto-flow: column;
+  position: relative;
+  display: grid;
+  min-height: 420px;
+  place-items: center;
+  gap: 22px;
+  overflow: hidden;
+  padding: 36px 20px;
+  border: 1px solid #dce5f2;
+  border-radius: 8px;
+  background:
+    linear-gradient(120deg, rgba(37, 99, 235, 0.08), rgba(20, 184, 166, 0.1)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0 1px, transparent 1px 72px),
+    #ffffff;
+  color: #465267;
+  text-align: center;
+}
+
+.loading-state::before {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 18%, rgba(255, 255, 255, 0.72) 42%, transparent 66%);
+  content: "";
+  transform: translateX(-100%);
+  animation: loading-sweep 2.4s ease-in-out infinite;
+}
+
+.loading-state > * {
+  position: relative;
+  z-index: 1;
+}
+
+.loading-state h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+.loading-state p {
+  max-width: 420px;
+  margin: 8px 0 0;
+  color: #657085;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.loading-orbit {
+  position: relative;
+  display: grid;
+  width: 92px;
+  height: 92px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(31, 43, 61, 0.12);
+}
+
+.loading-ring {
+  color: #2563eb;
+  animation: spin 1s linear infinite;
+}
+
+.loading-dot {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  background: #14b8a6;
+  box-shadow: 0 0 0 8px rgba(20, 184, 166, 0.12);
+  animation: pulse-dot 1.35s ease-in-out infinite;
+}
+
+.dot-one {
+  top: 8px;
+  right: 24px;
+}
+
+.dot-two {
+  bottom: 16px;
+  left: 16px;
+  animation-delay: 160ms;
+}
+
+.dot-three {
+  right: 12px;
+  bottom: 18px;
+  background: #f59e0b;
+  box-shadow: 0 0 0 8px rgba(245, 158, 11, 0.13);
+  animation-delay: 320ms;
+}
+
+.loading-card-grid {
+  display: grid;
+  width: min(100%, 620px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
-.loading-state svg {
-  animation: spin 1s linear infinite;
+.loading-card-ghost {
+  height: 74px;
+  border: 1px solid rgba(216, 224, 236, 0.9);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(237, 241, 247, 0.85), rgba(255, 255, 255, 0.95), rgba(237, 241, 247, 0.85)),
+    #f8fafc;
+  background-size: 220% 100%;
+  animation: ghost-scan 1.7s ease-in-out infinite;
+}
+
+.loading-card-ghost:nth-child(2),
+.loading-card-ghost:nth-child(5) {
+  animation-delay: 120ms;
+}
+
+.loading-card-ghost:nth-child(3),
+.loading-card-ghost:nth-child(6) {
+  animation-delay: 240ms;
 }
 
 .empty-state h2 {
@@ -500,6 +610,46 @@ button {
   }
 }
 
+@keyframes loading-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  55%,
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    transform: scale(0.78);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes ghost-scan {
+  0% {
+    background-position: 180% 0;
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    background-position: -40% 0;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 900px) {
   .app-shell {
     grid-template-columns: 1fr;
@@ -550,6 +700,10 @@ button {
   .legal-page {
     padding: 24px 18px;
   }
+
+  .loading-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 560px) {
@@ -568,5 +722,14 @@ button {
 
   .language-toggle {
     width: 100%;
+  }
+
+  .loading-state {
+    min-height: 360px;
+    padding: 28px 14px;
+  }
+
+  .loading-card-grid {
+    grid-template-columns: 1fr;
   }
 }

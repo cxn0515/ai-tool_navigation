@@ -28,7 +28,7 @@ import {
   Video
 } from 'lucide-vue-next'
 import { fetchBrowserLocale, fetchCategories, fetchLocale, fetchTools } from './api'
-import { fallbackCategories, fallbackTools } from './fallbackData'
+import { fallbackCategories } from './fallbackData'
 import { localizeCategories, localizeTools } from './i18n'
 
 const iconMap = {
@@ -176,6 +176,25 @@ function browserFallbackLanguage() {
   return locale.toLowerCase().includes('zh-cn') || timezone === 'Asia/Shanghai' ? 'zh' : 'en'
 }
 
+const CATEGORY_CACHE_KEY = 'ainav-categories-cache'
+
+function readCachedCategories() {
+  try {
+    const cached = JSON.parse(window.localStorage.getItem(CATEGORY_CACHE_KEY) || '[]')
+    return Array.isArray(cached) && cached.length > 0 ? cached : fallbackCategories
+  } catch {
+    return fallbackCategories
+  }
+}
+
+function cacheCategories(nextCategories) {
+  try {
+    window.localStorage.setItem(CATEGORY_CACHE_KEY, JSON.stringify(nextCategories))
+  } catch {
+    // Storage can be unavailable in private browsing modes.
+  }
+}
+
 async function detectLanguage() {
   window.localStorage.removeItem('ainav-language')
   window.localStorage.removeItem('ainav-language-manual')
@@ -188,18 +207,27 @@ async function detectLanguage() {
   return browserFallbackLanguage()
 }
 
-const categories = ref(fallbackCategories)
-const tools = ref(fallbackTools)
+const categories = ref(readCachedCategories())
+const tools = ref([])
 const activeCategory = ref('all')
 const query = ref('')
 const onlyFeatured = ref(false)
-const loading = ref(false)
+const loading = ref(true)
 const failedIcons = ref(new Set())
 const language = ref(browserFallbackLanguage())
 const currentPath = ref(window.location.pathname)
 
 const t = computed(() => messages[language.value])
 const pages = computed(() => sitePages[language.value])
+const loadingCopy = computed(() => language.value === 'zh'
+  ? {
+      title: '正在整理工具库',
+      text: '分类已就绪，正在从服务器拉取最新工具数据。'
+    }
+  : {
+      title: 'Preparing the directory',
+      text: 'Categories are ready. Fetching the latest tools from the server.'
+    })
 const currentPage = computed(() => {
   const path = currentPath.value.replace(/\/$/, '') || '/'
   if (path === '/about') return pages.value.about
@@ -211,17 +239,16 @@ const localizedCategories = computed(() => localizeCategories(categories.value, 
 const localizedTools = computed(() => localizeTools(tools.value, language.value))
 
 const loadDirectory = async () => {
-  const showInitialLoading = categories.value.length === 0 && tools.value.length === 0
-  loading.value = showInitialLoading
+  loading.value = tools.value.length === 0
   failedIcons.value = new Set()
   try {
     const categoryFallback = categories.value.length ? categories.value : undefined
-    const toolFallback = tools.value.length ? tools.value : undefined
     const [categoryData, toolData] = await Promise.all([
       fetchCategories('zh', categoryFallback),
-      fetchTools('zh', toolFallback)
+      fetchTools('zh')
     ])
     categories.value = categoryData
+    cacheCategories(categoryData)
     tools.value = toolData
   } finally {
     loading.value = false
@@ -368,12 +395,7 @@ const hasLocalIcon = (tool) => {
         </button>
       </header>
 
-      <section v-if="loading" class="loading-state">
-        <LoaderCircle :size="24" />
-        <span>{{ t.loading }}</span>
-      </section>
-
-      <section v-else-if="currentPage" class="legal-page">
+      <section v-if="currentPage" class="legal-page">
         <p class="legal-eyebrow">{{ currentPage.eyebrow }}</p>
         <h2>{{ currentPage.title }}</h2>
         <p v-if="currentPage.updated" class="legal-updated">{{ currentPage.updated }}</p>
@@ -387,6 +409,22 @@ const hasLocalIcon = (tool) => {
             {{ currentPage.contact }}
             <a href="mailto:cxn0515@gmail.com">cxn0515@gmail.com</a>
           </p>
+        </div>
+      </section>
+
+      <section v-else-if="loading" class="loading-state" aria-live="polite">
+        <div class="loading-orbit" aria-hidden="true">
+          <LoaderCircle class="loading-ring" :size="42" />
+          <span class="loading-dot dot-one"></span>
+          <span class="loading-dot dot-two"></span>
+          <span class="loading-dot dot-three"></span>
+        </div>
+        <div>
+          <h2>{{ loadingCopy.title }}</h2>
+          <p>{{ loadingCopy.text }}</p>
+        </div>
+        <div class="loading-card-grid" aria-hidden="true">
+          <span v-for="index in 6" :key="index" class="loading-card-ghost"></span>
         </div>
       </section>
 

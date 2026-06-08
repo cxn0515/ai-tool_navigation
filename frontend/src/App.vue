@@ -28,6 +28,7 @@ import {
   Video
 } from 'lucide-vue-next'
 import { fetchBrowserLocale, fetchCategories, fetchLocale, fetchTools } from './api'
+import { fallbackCategories, fallbackTools } from './fallbackData'
 import { localizeCategories, localizeTools } from './i18n'
 
 const iconMap = {
@@ -187,12 +188,12 @@ async function detectLanguage() {
   return browserFallbackLanguage()
 }
 
-const categories = ref([])
-const tools = ref([])
+const categories = ref(fallbackCategories)
+const tools = ref(fallbackTools)
 const activeCategory = ref('all')
 const query = ref('')
 const onlyFeatured = ref(false)
-const loading = ref(true)
+const loading = ref(false)
 const failedIcons = ref(new Set())
 const language = ref(browserFallbackLanguage())
 const currentPath = ref(window.location.pathname)
@@ -407,7 +408,16 @@ const hasLocalIcon = (tool) => {
           <div class="tool-grid">
             <a v-for="tool in group.tools" :key="tool.slug" class="tool-card" :href="tool.url" target="_blank" rel="noopener noreferrer">
               <div class="tool-card-head">
-                <img v-if="hasLocalIcon(tool)" :src="tool.iconUrl" :alt="`${tool.name} ${t.iconAlt}`" width="44" height="44" @error="markIconFailed(tool)" />
+                <img
+                  v-if="hasLocalIcon(tool)"
+                  :src="tool.iconUrl"
+                  :alt="`${tool.name} ${t.iconAlt}`"
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                  @error="markIconFailed(tool)"
+                />
                 <span v-else class="tool-icon-placeholder">{{ iconLabel(tool) }}</span>
                 <div>
                   <h3>{{ tool.name }}</h3>

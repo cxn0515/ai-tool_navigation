@@ -38,6 +38,7 @@ export const fallbackTools = [
   tool('copilot', 'GitHub Copilot', 'GitHub 官方 AI 编程助手，深度集成 IDE 和 PR 工作流。', 'https://github.com/features/copilot', 'dev', '订阅', true, false, ['代码']),
   tool('v0', 'v0', 'Vercel 的 AI UI 生成工具，适合快速生成页面和组件。', 'https://v0.dev', 'dev', '免费/订阅', true, false, ['UI']),
   tool('notion-ai', 'Notion AI', '知识库和文档协作中的 AI 写作、总结和整理工具。', 'https://www.notion.so/product/ai', 'office', '订阅', true, false, ['文档']),
+  tool('remio', 'Remio', '本地优先 AI 记忆与知识库，索引文件、网页、会议、邮件和笔记，快速找回个人上下文。', 'https://remio.ai', 'office', '免费/订阅', true, false, ['知识库', '本地优先']),
   tool('doubao', '豆包', '字节跳动 AI 助手，覆盖聊天、写作、图像和语音。', 'https://www.doubao.com', 'chat', '免费', true, true, ['国产']),
   tool('deepseek', 'DeepSeek', '深度求索 AI 助手与模型平台，覆盖聊天、代码和推理。', 'https://chat.deepseek.com', 'chat', '免费/API', true, true, ['国产', '推理'])
 ]
